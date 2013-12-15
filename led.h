@@ -1,5 +1,5 @@
 #include <wiringPi.h>
-#include <wiringSerial.h>
+#include <serial/serial.h>
 #include <iostream>
 #include <sstream>
 
