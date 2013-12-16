@@ -1,5 +1,3 @@
-//comments go here
-
 #include <wiringPi.h>
 #include <serial/serial.h>
 #include <iostream>
