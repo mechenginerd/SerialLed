@@ -2,10 +2,8 @@
 This is the main function to run the serial led array
 */
 
-#include <sstream>
-#include <string>
-#include <iostream>
-#include <vector>
+#include "led.h"
+
 
 using namespace std;
 
@@ -21,6 +19,7 @@ int main()
 
 	commands.resize(sizeArray);
 
+	//asks for and saves commands which are written to commands
 	for ( int i = 0; i < sizeArray; i+=2 )
 	{
 		cout << "Enter a the pin to change and the command: " << endl;
@@ -38,5 +37,7 @@ int main()
 		commands[i+1] = status;
 	}
 
+	
+	
 	return 0;
 }
