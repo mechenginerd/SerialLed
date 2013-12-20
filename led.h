@@ -7,12 +7,18 @@
 
 using namespace std;
 
-class serialLed()
+class serialLedArray()
 {
-	//bool isOn;
+	//variables for the constructor
+	int baud;
+	string com;
+	vector<int> commands;
+	
 public:
 //connect takes a char as the com port and an int as the baud rate returns true if the com is open
-	bool connect( char com, int baud);
-//toggle switches the led to a different state
-	void state(char onOff);
+	void build();
+	void send();
+	serialLedArray( string comInit, int baudInit );
+	serialLedArray();
+	
 };
