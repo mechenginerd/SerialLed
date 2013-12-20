@@ -34,11 +34,13 @@ void serialLedArray::build()
 
 void serialLedArray::send()
 {
-
+	//call xbee stuff, serial.write commands
 }
 
 serialLedArray::serialLedArray( string comInit, int baudInit)
 {
 	com = comInit;
 	baud = baudInit;
+	
+	ledArray.begin ( com, baud );		//the constructor opens the serial communication
 }

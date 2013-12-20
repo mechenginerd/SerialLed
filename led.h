@@ -12,7 +12,7 @@ class serialLedArray()
 	//variables for the constructor
 	int baud;
 	string com;
-	vector<int> commands;
+	vector<int> commands;  
 	
 public:
 //connect takes a char as the com port and an int as the baud rate returns true if the com is open
@@ -20,5 +20,13 @@ public:
 	void send();
 	serialLedArray( string comInit, int baudInit );
 	serialLedArray();
+	serial ledArray;
 	
+};
+
+class xbee()
+{
+	
+public:
+	//start communication, specify recipient, send data
 };
